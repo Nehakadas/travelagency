@@ -3,127 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Wanderlust Travels – discover exclusive deals, hidden gems and unforgettable adventures around the world.">
+    <title>Wanderlust Travels | Your Next Adventure Awaits</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="navbar">
-        <div id="div1">
-            <img src="logo.png" alt=""> 
-            <h1>Travel Agency</h1>
-        </div>
-        <div id="div2">
-         <a href="">home</a>
-         <a href="">service</a>
-         <a href="">destination</a>
-         <a href="">login</a>
-         <button class="cbtn" style="height: 55px; width: 100px;">sign up</button>
-        </div> 
-    </nav>
-        <section class="hero">
-            <div class="hero-content">
-                <h3>Pack yours bags, let's go somewhere's amazing </h3><br>
-                <p>hidden gems,breathtaking views,unforgettable adventures whrere will you go next</p>
-            
-            <div class="hero-button">
-                <button class="btn" style="width: 100px; height: 50px; border-radius: 15px;">Book now</button>
+    <!-- Skip link for keyboard / screen-reader users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <nav id="navbar" aria-label="Main navigation">
+            <div class="nav-brand">
+                <img src="logo.png" alt="Wanderlust Travels logo" width="48" height="48">
+                <span class="brand-name">Travel Agency</span>
             </div>
+
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <div id="nav-menu" class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+                <a href="signup.html" class="btn btn-outline">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero -->
+        <section class="hero" id="home" aria-labelledby="hero-heading">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 id="hero-heading">Pack your bags, let's go somewhere amazing</h1>
+                <p>Hidden gems, breathtaking views, unforgettable adventures — where will you go next?</p>
+                <a href="#destinations" class="btn btn-primary">Book Now</a>
             </div>
         </section>
-        <div class="center-container">
-            <div class="contain">
-                <h3>What's so special about this ?</h3>
-                <p>Save more on yours trips with exclusive disscounts ,sessonal promotions and unbeatable deals with unforgettable adventures</p>
+
+        <!-- Special offer intro -->
+        <section class="intro" id="services" aria-labelledby="intro-heading">
+            <div class="container">
+                <h2 id="intro-heading">What's so special about this?</h2>
+                <p>Save more on your trips with exclusive discounts, seasonal promotions and unbeatable deals for unforgettable adventures.</p>
             </div>
-        </div>
-        <div class="card-container">
-            <div class="card">
-                <div class="card-number">01</div>
-                <img src="img1.png" alt="">
-                <p>We just dont plan vacations ; we create journeys tailored to your dreams, ensuring every moment is unforgettable.</p>
+        </section>
+
+        <!-- Feature cards -->
+        <section class="features" aria-label="Why choose us">
+            <div class="container card-grid">
+                <article class="card">
+                    <span class="card-number" aria-hidden="true">01</span>
+                    <img src="img1.png" alt="Personalized travel planning illustration">
+                    <p>We don't just plan vacations — we create journeys tailored to your dreams, ensuring every moment is unforgettable.</p>
+                </article>
+                <article class="card">
+                    <span class="card-number" aria-hidden="true">02</span>
+                    <img src="img2.png" alt="Local experiences and hidden spots">
+                    <p>With our trusted local partners, you'll discover hidden spots and cultural experiences that most travelers never get to see.</p>
+                </article>
             </div>
-            <div class="card">
-                <div class="card-number">02</div>
-                <img src="img2.png" alt="">
-                <p>With our trusted local partners , you'll discover hidden spots and cultural Experiences that most travelers never get to see.</p>
-            </div>
-        </div>
-        <div class="text-left">
-            <span class="tag">Our Destination</span>
-            <h1>Your next favorite <br>place awaits </h1>
-        </div>
-        <div class="text-right">
-            <p>Get the best value for your trips with exclusive discounts ,promotions and deals to save while exploring the world !</p>
-            <button class="see-all-btn">See All <span class=" arrow">>></span></button>
-        </div>
-        <div class="place-container">
-            <div class="place">
-                <img src="japan.png" alt="">
-                <h2>Japan</h2>
-            </div>
-            <div class="place">
-                <img src="indonesia.png" alt="">
-                <h2>Indonesia</h2>
-            </div>
-            <div class="place">
-                <img src="italy.png" alt="">
-                <h2>Italy</h2>
-            </div>
-        </div>
-        <div class="left-container">
-            <h3>"Create memories that last a lifetime,together."</h3>
-            <p>Your Travel Planning Just Got Easier.Travel Safe, Travel Smart.Delivering Quality Travel Experiences.Expert advice for effortless planning every time. </p>
-        </div>
-        <div class="right-container">
-            <img src="image.png" alt="" width="480px">
-        </div> 
-        <div class="img-container">
-            <div class="box">
-                <img src="sunset.jpg" alt="">
-                <h2 style:bold;>Santorini sunset Escape</h2>       
-            </div>
-            <div class="box">
-                <img src="rock.png" alt="">
-                <h2 style="font:bold;">Rock Mountain</h2>
-            </div>
-            <div class="box">
-                <img src="kyoto.png" alt="">
-                <h2 style=" font:bold;">Kyoto cultural</h2>
-            </div>
-        </div>
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-about">
-                    <h3>Wanderlast Travels</h3>
-                    <p>Your gateway to unforgettable adventures. Explor the world with us !</p>
+        </section>
+
+        <!-- Destinations heading -->
+        <section class="destinations-header" id="destinations">
+            <div class="container destinations-flex">
+                <div class="text-left">
+                    <span class="tag">Our Destinations</span>
+                    <h2>Your next favorite<br>place awaits</h2>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick links</h4>
-                    <ul>
-                        <li><a href="#">Destinations</a></li>
-                        <li><a href="#">Tours</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>contact Us</h4>
-                    <p>Email: info@wandeflast.com</p>
-                    <p>Phone: +123 456 7890</p>
-                    <p>Location: 123 adventure Rd, Globe City</p>
-                </div>
-                <div class="footer-social">
-                    <h4>Follow us</h4>
-                    <div class="social-icons">
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt=""></a>
-                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt=""></a>
-                        <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/016/716/467/non_2x/twitter-icon-free-png.png" alt=""></a>
-                    </div>
+                <div class="text-right">
+                    <p>Get the best value for your trips with exclusive discounts, promotions and deals so you can save while exploring the world.</p>
+                    <a href="#all-destinations" class="btn btn-dark">See All <span aria-hidden="true">→</span></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p> &copy; 2025 Wandwelast Travels. All rights reserved. </p>
+        </section>
+
+        <!-- Destination cards -->
+        <section class="places" aria-label="Popular destinations">
+            <div class="container place-grid">
+                <article class="place">
+                    <img src="japan.png" alt="Traditional temple and cherry blossoms in Japan">
+                    <h3>Japan</h3>
+                </article>
+                <article class="place">
+                    <img src="indonesia.png" alt="Tropical beaches and temples of Indonesia">
+                    <h3>Indonesia</h3>
+                </article>
+                <article class="place">
+                    <img src="italy.png" alt="Historic streets and coastline of Italy">
+                    <h3>Italy</h3>
+                </article>
             </div>
-        </footer>
+        </section>
+
+        <!-- Memories / CTA split -->
+        <section class="memories" aria-labelledby="memories-heading">
+            <div class="container memories-flex">
+                <div class="memories-text">
+                    <h2 id="memories-heading">“Create memories that last a lifetime, together.”</h2>
+                    <p>Your travel planning just got easier. Travel safe, travel smart. Delivering quality travel experiences and expert advice for effortless planning every time.</p>
+                </div>
+                <div class="memories-image">
+                    <img src="image.png" alt="Happy travelers exploring together">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured experiences -->
+        <section class="experiences" aria-label="Featured travel experiences">
+            <div class="container experience-grid">
+                <article class="box">
+                    <img src="sunset.jpg" alt="Golden sunset over Santorini cliffs and sea">
+                    <h3>Santorini Sunset Escape</h3>
+                </article>
+                <article class="box">
+                    <img src="rock.png" alt="Dramatic rocky mountain landscape">
+                    <h3>Rock Mountain</h3>
+                </article>
+                <article class="box">
+                    <img src="kyoto.png" alt="Traditional temples and gardens in Kyoto">
+                    <h3>Kyoto Cultural</h3>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h3>Wanderlust Travels</h3>
+                <p>Your gateway to unforgettable adventures. Explore the world with us!</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#services">Tours</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><a href="mailto:info@wanderlust.com">info@wanderlust.com</a></p>
+                <p><a href="tel:+1234567890">+123 456 7890</a></p>
+                <p>123 Adventure Rd, Globe City</p>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="" width="24" height="24">
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="" width="24" height="24">
+                    </a>
+                    <a href="#" aria-label="Twitter / X">
+                        <img src="https://static.vecteezy.com/system/resources/previews/016/716/467/non_2x/twitter-icon-free-png.png" alt="" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Wanderlust Travels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple accessible mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.getElementById('nav-menu');
+
+        toggle.addEventListener('click', () => {
+            const expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            menu.classList.toggle('is-open');
+        });
+    </script>
 </body>
 </html>
